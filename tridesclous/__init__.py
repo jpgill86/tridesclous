@@ -18,15 +18,15 @@ import PyQt5 # this force pyqtgraph to deal with Qt5
 #   * this avoid tinker problem when not installed
 #   * work better with GUI
 #   * trigger a warning on notebook
-import matplotlib
-import warnings
-with warnings.catch_warnings():
-    try:                                                                                                                                                                                                                                    
-        warnings.simplefilter("ignore")
-        matplotlib.use('Qt5Agg')                                                                                                                                                                                                            
-    except:
-        # on server without screen this is not possible.
-        pass
+# import matplotlib
+# import warnings
+# with warnings.catch_warnings():
+#     try:                                                                                                                                                                                                                                    
+#         warnings.simplefilter("ignore")
+#         matplotlib.use('Qt5Agg')                                                                                                                                                                                                            
+#     except:
+#         # on server without screen this is not possible.
+#         pass
 
 
 from .datasets import download_dataset, get_dataset
